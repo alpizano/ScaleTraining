@@ -77,19 +77,49 @@ Public Class Policy
   ''' </remarks>
   Public Function FetchLineDetail(ByVal iLineID As Integer) As DataTable
 
-    Dim sSQL As String = " SELECT l.uniqline, l.cdstatecodeissuing AS issuingstate, " & _
-                         "        l.contactnamebillto, l.address1billto, l.address2billto, " & _
-                         "        l.address3billto, l.citybillto, l.cdstatecodebillto, " & _
-                         "        l.postalcodebillto, l.countybillto, l.cdcountrycodebillto, " & _
-                         "        l.email, l.fax, l.faxextension, " & _
-                         "        c.cdpolicylinetypecode, f.descriptionof AS formcategory,  " & _
-                         "        b.nameof AS billingcompany, i.nameof AS issuingcompany " & _
-                         " FROM line l " & _
-                         " INNER JOIN cdpolicylinetype c ON c.uniqcdpolicylinetype = l.uniqcdpolicylinetype " & _
-                         " INNER JOIN formcategory f ON f.uniqformcategory = l.uniqformcategory " & _
-                         " INNER JOIN company b ON b.uniqentity = l.uniqentitycompanybilling " & _
-                         " INNER JOIN company i ON i.uniqentity = l.uniqentitycompanyissuing " & _
+    Dim sSQL As String = " SELECT l.uniqline, l.cdstatecodeissuing AS issuingstate, " &
+                         "        c.cdpolicylinetypecode, f.descriptionof As formcategory,  " &
+                         "        b.NameOf As billingcompany, i.NameOf As issuingcompany " &
+                         " FROM line l " &
+                         " INNER JOIN cdpolicylinetype c On c.uniqcdpolicylinetype = l.uniqcdpolicylinetype " &
+                         " INNER JOIN formcategory f On f.uniqformcategory = l.uniqformcategory " &
+                         " INNER JOIN company b On b.uniqentity = l.uniqentitycompanybilling " &
+                         " INNER JOIN company i On i.uniqentity = l.uniqentitycompanyissuing " &
                          " WHERE l.uniqline = " & iLineID
+
+
+    'Dim sSQL As String = " SELECT l.uniqline, l.cdstatecodeissuing AS issuingstate, " &
+    '"        l.contactnamebillto, l.address1billto, l.address2billto, " &
+    '"        l.address3billto, l.citybillto, l.cdstatecodebillto, " &
+    '"        l.postalcodebillto, l.countybillto, l.cdcountrycodebillto, " &
+    '"        l.email, l.fax, l.faxextension, " &
+    '"        c.cdpolicylinetypecode, f.descriptionof AS formcategory,  " &
+    '"        b.nameof AS billingcompany, i.nameof AS issuingcompany " &
+    '" FROM line l " &
+    '" INNER JOIN cdpolicylinetype c ON c.uniqcdpolicylinetype = l.uniqcdpolicylinetype " &
+    '" INNER JOIN formcategory f ON f.uniqformcategory = l.uniqformcategory " &
+    '" INNER JOIN company b ON b.uniqentity = l.uniqentitycompanybilling " &
+    '" INNER JOIN company i ON i.uniqentity = l.uniqentitycompanyissuing " &
+    '" WHERE l.uniqline = " & iLineID
+    Return ExecuteDataTable(sSQL)
+
+  End Function
+
+  Public Function FetchComboDetail(ByVal iLineID As Integer) As DataTable
+
+    Dim sSQL As String = " SELECT l.uniqline, l.cdstatecodeissuing AS issuingstate, " &
+                         "        c.cdpolicylinetypecode, f.descriptionof As formcategory,  " &
+                         "        b.NameOf As billingcompany, i.NameOf As issuingcompany, " &
+                         "        p.uniqpolicy, p.billedcommission, p.billedpremium, " &
+                         "        p.annualizedcommission, p.annualizedpremium " &
+                         " FROM line l " &
+                         " INNER JOIN cdpolicylinetype c On c.uniqcdpolicylinetype = l.uniqcdpolicylinetype " &
+                         " INNER JOIN formcategory f On f.uniqformcategory = l.uniqformcategory " &
+                         " INNER JOIN company b On b.uniqentity = l.uniqentitycompanybilling " &
+                         " INNER JOIN company i On i.uniqentity = l.uniqentitycompanyissuing " &
+                         " INNER JOIN policy p ON l.uniqpolicy = p.uniqpolicy " &
+                         " WHERE l.uniqline = " & iLineID
+
     Return ExecuteDataTable(sSQL)
 
   End Function
@@ -118,7 +148,7 @@ Public Class Policy
   Public Function Renew(ByVal iPolicyID As Integer) As Boolean
 
     Dim sSQL As String = " UPDATE policy " & _
-                         " SET effectivedate = DATEADD(DAY, DATEDIFF(DAY, 0, GETDATE()), 0), " & _
+                         " Set effectivedate = DATEADD(DAY, DATEDIFF(DAY, 0, GETDATE()), 0), " & _
                          "     expirationdate = DATEADD(MONTH, DATEDIFF(MONTH, effectivedate, expirationdate), DATEADD(DAY, DATEDIFF(DAY, 0, GETDATE()), 0)) " & _
                          " WHERE uniqpolicy = " & iPolicyID
     Return (ExecuteCommand(sSQL) > 0)
@@ -147,12 +177,12 @@ Public Class Policy
   ''' </remarks>
   Public Function CheckPolicySecurity(ByVal iPolicyID As Integer, ByVal sUserCode As String) As DataTable
 
-    Dim sSQL As String = " SELECT COUNT(*) AS countof " & _
+    Dim sSQL As String = " Select COUNT(*) As countof " & _
                          " FROM securityuser u " & _
-                         " INNER JOIN securityuserstructurecombinationjt jt ON jt.uniqsecurityuser =  u.uniqsecurityuser " & _
-                         " INNER JOIN structurecombination s ON  s.uniqstructure = jt.uniqstructure " & _
-                         " INNER JOIN policy p ON p.uniqagency = s.uniqagency AND " & _
-                         "                        p.uniqbranch = s.uniqbranch AND " & _
+                         " INNER JOIN securityuserstructurecombinationjt jt On jt.uniqsecurityuser =  u.uniqsecurityuser " & _
+                         " INNER JOIN structurecombination s On  s.uniqstructure = jt.uniqstructure " & _
+                         " INNER JOIN policy p On p.uniqagency = s.uniqagency And " & _
+                         "                        p.uniqbranch = s.uniqbranch And " & _
                          "                        p.uniqdepartment = s.uniqdepartment " & _
                          " WHERE u.usercode = '" & ToDBString(sUserCode) & "' and " & _
                          "       p.uniqpolicy =  " & iPolicyID

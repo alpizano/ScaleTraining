@@ -24,3 +24,12 @@ C:\Users\lcahan\Desktop\Scale Training\ASI.ScaleTraining.Data.Client\obj\Debug\A
 C:\Users\lcahan\Desktop\Scale Training\ASI.ScaleTraining.Data.Client\obj\Debug\ASI.ScaleTraining.Data.Client.dll
 C:\Users\lcahan\Desktop\Scale Training\ASI.ScaleTraining.Data.Client\obj\Debug\ASI.ScaleTraining.Data.Client.xml
 C:\Users\lcahan\Desktop\Scale Training\ASI.ScaleTraining.Data.Client\obj\Debug\ASI.ScaleTraining.Data.Client.pdb
+C:\Users\XxaemaeThxX\Desktop\Scale Training\ScaleTraining\ASI.ScaleTraining.Data.Client\bin\Debug\ASI.ScaleTraining.Data.Client.dll
+C:\Users\XxaemaeThxX\Desktop\Scale Training\ScaleTraining\ASI.ScaleTraining.Data.Client\bin\Debug\ASI.ScaleTraining.Data.Client.pdb
+C:\Users\XxaemaeThxX\Desktop\Scale Training\ScaleTraining\ASI.ScaleTraining.Data.Client\bin\Debug\ASI.ScaleTraining.Data.Client.xml
+C:\Users\XxaemaeThxX\Desktop\Scale Training\ScaleTraining\ASI.ScaleTraining.Data.Client\obj\Debug\ASI.ScaleTraining.Data.Client.Resources.resources
+C:\Users\XxaemaeThxX\Desktop\Scale Training\ScaleTraining\ASI.ScaleTraining.Data.Client\obj\Debug\ASI.ScaleTraining.Data.Client.vbproj.GenerateResource.cache
+C:\Users\XxaemaeThxX\Desktop\Scale Training\ScaleTraining\ASI.ScaleTraining.Data.Client\obj\Debug\ASI.ScaleTraining.Data.Client.vbproj.CoreCompileInputs.cache
+C:\Users\XxaemaeThxX\Desktop\Scale Training\ScaleTraining\ASI.ScaleTraining.Data.Client\obj\Debug\ASI.ScaleTraining.Data.Client.dll
+C:\Users\XxaemaeThxX\Desktop\Scale Training\ScaleTraining\ASI.ScaleTraining.Data.Client\obj\Debug\ASI.ScaleTraining.Data.Client.xml
+C:\Users\XxaemaeThxX\Desktop\Scale Training\ScaleTraining\ASI.ScaleTraining.Data.Client\obj\Debug\ASI.ScaleTraining.Data.Client.pdb

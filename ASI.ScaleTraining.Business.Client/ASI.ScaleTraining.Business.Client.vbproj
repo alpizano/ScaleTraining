@@ -15,7 +15,7 @@
     <OptionExplicit>On</OptionExplicit>
     <OptionCompare>Binary</OptionCompare>
     <OptionStrict>On</OptionStrict>
-    <OptionInfer>On</OptionInfer>
+    <OptionInfer>Off</OptionInfer>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
     <OldToolsVersion>3.5</OldToolsVersion>
@@ -57,15 +57,11 @@
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="ASI.ScaleTraining.Data.Client, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>V:\ASI.ScaleTraining.Data.Client.dll</HintPath>
-      <Private>False</Private>
+    <Reference Include="ASI.ScaleTraining.Data.Client">
+      <HintPath>..\ASI.ScaleTraining.Data.Client\bin\Debug\ASI.ScaleTraining.Data.Client.dll</HintPath>
     </Reference>
-    <Reference Include="ASI.ScaleTraining.DataAccess.Client, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>V:\ASI.ScaleTraining.DataAccess.Client.dll</HintPath>
-      <Private>False</Private>
+    <Reference Include="ASI.ScaleTraining.DataAccess.Client">
+      <HintPath>..\ASI.ScaleTraining.DataAccess.Client\bin\Debug\ASI.ScaleTraining.DataAccess.Client.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -81,7 +77,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Import Include="Microsoft.VisualBasic" />
     <Import Include="System" />
     <Import Include="System.Collections" />
     <Import Include="System.Collections.Generic" />

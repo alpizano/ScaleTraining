@@ -149,38 +149,41 @@ Public Class PolicyList
     If lvwPolicies.SelectedItems.Count > 0 Then
 
       ' Declare Detail Objects
-      Dim datPolicyDetail As dat.PolicyDetail
-      Dim datLineDetail As dat.LineDetail
+      'Dim datPolicyDetail As dat.PolicyDetail
+      'Dim datLineDetail As dat.LineDetail
+      Dim datComboDetail As dat.ComboDetail
 
       ' Lookup Detail Information
       Dim busPolicy As New bus.Policy
-      datPolicyDetail = busPolicy.FindPolicyDetail(Integer.Parse(DirectCast(lvwPolicies.SelectedItems(0).Tag, String).Split(","c)(1)))
-      datLineDetail = busPolicy.FindLineDetail(Integer.Parse(DirectCast(lvwPolicies.SelectedItems(0).Tag, String).Split(","c)(1)))
+      'datPolicyDetail = busPolicy.FindPolicyDetail(Integer.Parse(DirectCast(lvwPolicies.SelectedItems(0).Tag, String).Split(","c)(1)))
+      'datLineDetail = busPolicy.FindLineDetail(Integer.Parse(DirectCast(lvwPolicies.SelectedItems(0).Tag, String).Split(","c)(1)))
+      datComboDetail = busPolicy.FindComboDetail(Integer.Parse(DirectCast(lvwPolicies.SelectedItems(0).Tag, String).Split(","c)(1)))
+
 
       ' Populate UI
-      If datPolicyDetail.BilledCommission <> -1 Then
-        txtBilledCommission.Text = datPolicyDetail.BilledCommission.ToString("c")
+      If datComboDetail.BilledCommission <> -1 Then
+        txtBilledCommission.Text = datComboDetail.BilledCommission.ToString("c")
       Else
         txtBilledCommission.Text = String.Empty
       End If
-      If datPolicyDetail.BilledPremium <> -1 Then
-        txtBilledPremium.Text = datPolicyDetail.BilledPremium.ToString("c")
+      If datComboDetail.BilledPremium <> -1 Then
+        txtBilledPremium.Text = datComboDetail.BilledPremium.ToString("c")
       Else
         txtBilledPremium.Text = String.Empty
       End If
-      If datPolicyDetail.AnnualizedCommission <> -1 Then
-        txtAnnualizedCommission.Text = datPolicyDetail.AnnualizedCommission.ToString("c")
+      If datComboDetail.AnnualizedCommission <> -1 Then
+        txtAnnualizedCommission.Text = datComboDetail.AnnualizedCommission.ToString("c")
       Else
         txtAnnualizedCommission.Text = String.Empty
       End If
-      If datPolicyDetail.AnnualizedPremium <> -1 Then
-        txtAnnualizedPremium.Text = datPolicyDetail.AnnualizedPremium.ToString("c")
+      If datComboDetail.AnnualizedPremium <> -1 Then
+        txtAnnualizedPremium.Text = datComboDetail.AnnualizedPremium.ToString("c")
       Else
         txtAnnualizedPremium.Text = String.Empty
       End If
-      txtBillingCompany.Text = datLineDetail.BillingCompany
-      txtIssuingCompany.Text = datLineDetail.IssuingCompany
-      txtIssuingState.Text = datLineDetail.IssuingState
+      txtBillingCompany.Text = datComboDetail.BillingCompany
+      txtIssuingCompany.Text = datComboDetail.IssuingCompany
+      txtIssuingState.Text = datComboDetail.IssuingState
 
       ' Enable Action Buttons
       cmdRenew.Enabled = True

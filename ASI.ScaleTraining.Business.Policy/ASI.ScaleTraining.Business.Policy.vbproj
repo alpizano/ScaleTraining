@@ -15,7 +15,7 @@
     <OptionExplicit>On</OptionExplicit>
     <OptionCompare>Binary</OptionCompare>
     <OptionStrict>On</OptionStrict>
-    <OptionInfer>On</OptionInfer>
+    <OptionInfer>Off</OptionInfer>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
     <OldToolsVersion>3.5</OldToolsVersion>
@@ -57,15 +57,11 @@
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="ASI.ScaleTraining.Data.Policy, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>V:\ASI.ScaleTraining.Data.Policy.dll</HintPath>
-      <Private>False</Private>
+    <Reference Include="ASI.ScaleTraining.Data.Policy">
+      <HintPath>..\ASI.ScaleTraining.Data.Policy\bin\Debug\ASI.ScaleTraining.Data.Policy.dll</HintPath>
     </Reference>
-    <Reference Include="ASI.ScaleTraining.DataAccess.Policy, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>V:\ASI.ScaleTraining.DataAccess.Policy.dll</HintPath>
-      <Private>False</Private>
+    <Reference Include="ASI.ScaleTraining.DataAccess.Policy">
+      <HintPath>..\ASI.ScaleTraining.DataAccess.Policy\bin\Debug\ASI.ScaleTraining.DataAccess.Policy.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />

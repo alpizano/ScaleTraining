@@ -6,6 +6,22 @@ ASI.ScaleTraining.Data.Client
 </name>
 </assembly>
 <members>
+<member name="T:ASI.ScaleTraining.Data.Client.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:ASI.ScaleTraining.Data.Client.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:ASI.ScaleTraining.Data.Client.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
 <member name="T:ASI.ScaleTraining.Data.Client.Client">
  <summary>
    This class implements the data layer for clients.
@@ -196,22 +212,6 @@ ASI.ScaleTraining.Data.Client
  <remarks>
    None
  </remarks>
-</member>
-<member name="T:ASI.ScaleTraining.Data.Client.My.Resources.Resources">
-<summary>
-  A strongly-typed resource class, for looking up localized strings, etc.
-</summary>
-</member>
-<member name="P:ASI.ScaleTraining.Data.Client.My.Resources.Resources.ResourceManager">
-<summary>
-  Returns the cached ResourceManager instance used by this class.
-</summary>
-</member>
-<member name="P:ASI.ScaleTraining.Data.Client.My.Resources.Resources.Culture">
-<summary>
-  Overrides the current thread's CurrentUICulture property for all
-  resource lookups using this strongly typed resource class.
-</summary>
 </member>
 </members>
 </doc>

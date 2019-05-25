@@ -6,6 +6,22 @@ ASI.ScaleTraining.Business.Policy
 </name>
 </assembly>
 <members>
+<member name="T:ASI.ScaleTraining.Business.Policy.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:ASI.ScaleTraining.Business.Policy.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:ASI.ScaleTraining.Business.Policy.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
 <member name="T:ASI.ScaleTraining.Business.Policy.Policy">
  <summary>
    This class implements the business layer for policies.
@@ -141,22 +157,6 @@ ASI.ScaleTraining.Business.Policy
  <remarks>
    None
  </remarks>
-</member>
-<member name="T:ASI.ScaleTraining.Business.Policy.My.Resources.Resources">
-<summary>
-  A strongly-typed resource class, for looking up localized strings, etc.
-</summary>
-</member>
-<member name="P:ASI.ScaleTraining.Business.Policy.My.Resources.Resources.ResourceManager">
-<summary>
-  Returns the cached ResourceManager instance used by this class.
-</summary>
-</member>
-<member name="P:ASI.ScaleTraining.Business.Policy.My.Resources.Resources.Culture">
-<summary>
-  Overrides the current thread's CurrentUICulture property for all
-  resource lookups using this strongly typed resource class.
-</summary>
 </member>
 </members>
 </doc>

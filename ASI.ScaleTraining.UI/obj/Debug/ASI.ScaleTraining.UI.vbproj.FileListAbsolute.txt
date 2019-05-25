@@ -30,3 +30,13 @@ C:\Users\lcahan\Desktop\Scale Training\ASI.ScaleTraining.UI\obj\Debug\ASI.ScaleT
 V:\ASI.ScaleTraining.UI.exe
 V:\ASI.ScaleTraining.UI.pdb
 V:\ASI.ScaleTraining.UI.xml
+C:\Users\XxaemaeThxX\Desktop\Scale Training\ScaleTraining\ASI.ScaleTraining.UI\obj\Debug\ASI.ScaleTraining.UI.vbprojAssemblyReference.cache
+C:\Users\XxaemaeThxX\Desktop\Scale Training\ScaleTraining\ASI.ScaleTraining.UI\obj\Debug\ASI.ScaleTraining.UI.AccountLocate.resources
+C:\Users\XxaemaeThxX\Desktop\Scale Training\ScaleTraining\ASI.ScaleTraining.UI\obj\Debug\ASI.ScaleTraining.UI.Resources.resources
+C:\Users\XxaemaeThxX\Desktop\Scale Training\ScaleTraining\ASI.ScaleTraining.UI\obj\Debug\ASI.ScaleTraining.UI.PolicyList.resources
+C:\Users\XxaemaeThxX\Desktop\Scale Training\ScaleTraining\ASI.ScaleTraining.UI\obj\Debug\ASI.ScaleTraining.UI.vbproj.GenerateResource.cache
+C:\Users\XxaemaeThxX\Desktop\Scale Training\ScaleTraining\ASI.ScaleTraining.UI\obj\Debug\ASI.ScaleTraining.UI.vbproj.CoreCompileInputs.cache
+C:\Users\XxaemaeThxX\Desktop\Scale Training\ScaleTraining\ASI.ScaleTraining.UI\obj\Debug\ASI.ScaleTraining.UI.exe
+C:\Users\XxaemaeThxX\Desktop\Scale Training\ScaleTraining\ASI.ScaleTraining.UI\obj\Debug\ASI.ScaleTraining.UI.xml
+C:\Users\XxaemaeThxX\Desktop\Scale Training\ScaleTraining\ASI.ScaleTraining.UI\obj\Debug\ASI.ScaleTraining.UI.pdb
+C:\Users\XxaemaeThxX\Desktop\Scale Training\ScaleTraining\ASI.ScaleTraining.UI\obj\Debug\ASI.ScaleTraining.UI.vbproj.CopyComplete

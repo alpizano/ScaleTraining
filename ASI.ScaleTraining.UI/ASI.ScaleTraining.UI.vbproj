@@ -59,25 +59,17 @@
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="ASI.ScaleTraining.Business.Client, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>V:\ASI.ScaleTraining.Business.Client.dll</HintPath>
-      <Private>False</Private>
+    <Reference Include="ASI.ScaleTraining.Business.Client">
+      <HintPath>..\ASI.ScaleTraining.Business.Client\bin\Debug\ASI.ScaleTraining.Business.Client.dll</HintPath>
     </Reference>
-    <Reference Include="ASI.ScaleTraining.Business.Policy, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>V:\ASI.ScaleTraining.Business.Policy.dll</HintPath>
-      <Private>False</Private>
+    <Reference Include="ASI.ScaleTraining.Business.Policy">
+      <HintPath>..\ASI.ScaleTraining.Business.Policy\bin\Debug\ASI.ScaleTraining.Business.Policy.dll</HintPath>
     </Reference>
-    <Reference Include="ASI.ScaleTraining.Data.Client, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>V:\ASI.ScaleTraining.Data.Client.dll</HintPath>
-      <Private>False</Private>
+    <Reference Include="ASI.ScaleTraining.Data.Client">
+      <HintPath>..\ASI.ScaleTraining.Data.Client\bin\Debug\ASI.ScaleTraining.Data.Client.dll</HintPath>
     </Reference>
-    <Reference Include="ASI.ScaleTraining.Data.Policy, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>V:\ASI.ScaleTraining.Data.Policy.dll</HintPath>
-      <Private>False</Private>
+    <Reference Include="ASI.ScaleTraining.Data.Policy">
+      <HintPath>..\ASI.ScaleTraining.Data.Policy\bin\Debug\ASI.ScaleTraining.Data.Policy.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />

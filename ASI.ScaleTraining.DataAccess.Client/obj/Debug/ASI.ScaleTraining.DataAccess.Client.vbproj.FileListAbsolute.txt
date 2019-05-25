@@ -16,3 +16,17 @@ C:\Users\lcahan\Desktop\Scale Training\ASI.ScaleTraining.DataAccess.Client\bin\D
 C:\Users\lcahan\Desktop\Scale Training\ASI.ScaleTraining.DataAccess.Client\bin\Debug\ASI.ScaleTraining.DataAccess.Client.pdb
 C:\Users\lcahan\Desktop\Scale Training\ASI.ScaleTraining.DataAccess.Client\bin\Debug\ASI.ScaleTraining.DataAccess.Client.xml
 C:\Users\lcahan\Desktop\Scale Training\ASI.ScaleTraining.DataAccess.Client\obj\Debug\ASI.ScaleTraining.DataAccess.Client.vbprojResolveAssemblyReference.cache
+C:\Users\XxaemaeThxX\Desktop\Scale Training\ScaleTraining\ASI.ScaleTraining.DataAccess.Client\obj\Debug\ASI.ScaleTraining.DataAccess.Client.vbprojAssemblyReference.cache
+C:\Users\XxaemaeThxX\Desktop\Scale Training\ScaleTraining\ASI.ScaleTraining.DataAccess.Client\obj\Debug\ASI.ScaleTraining.DataAccess.Client.Resources.resources
+C:\Users\XxaemaeThxX\Desktop\Scale Training\ScaleTraining\ASI.ScaleTraining.DataAccess.Client\obj\Debug\ASI.ScaleTraining.DataAccess.Client.vbproj.GenerateResource.cache
+C:\Users\XxaemaeThxX\Desktop\Scale Training\ScaleTraining\ASI.ScaleTraining.DataAccess.Client\obj\Debug\ASI.ScaleTraining.DataAccess.Client.vbproj.CoreCompileInputs.cache
+C:\Users\XxaemaeThxX\Desktop\Scale Training\ScaleTraining\ASI.ScaleTraining.DataAccess.Client\obj\Debug\ASI.ScaleTraining.DataAccess.Client.dll
+C:\Users\XxaemaeThxX\Desktop\Scale Training\ScaleTraining\ASI.ScaleTraining.DataAccess.Client\obj\Debug\ASI.ScaleTraining.DataAccess.Client.xml
+C:\Users\XxaemaeThxX\Desktop\Scale Training\ScaleTraining\ASI.ScaleTraining.DataAccess.Client\obj\Debug\ASI.ScaleTraining.DataAccess.Client.pdb
+C:\Users\XxaemaeThxX\Desktop\Scale Training\ScaleTraining\ASI.ScaleTraining.DataAccess.Client\bin\Debug\ASI.ScaleTraining.DataAccess.Client.dll
+C:\Users\XxaemaeThxX\Desktop\Scale Training\ScaleTraining\ASI.ScaleTraining.DataAccess.Client\bin\Debug\ASI.ScaleTraining.DataAccess.Client.pdb
+C:\Users\XxaemaeThxX\Desktop\Scale Training\ScaleTraining\ASI.ScaleTraining.DataAccess.Client\bin\Debug\ASI.ScaleTraining.DataAccess.Client.xml
+C:\Users\XxaemaeThxX\Desktop\Scale Training\ScaleTraining\ASI.ScaleTraining.DataAccess.Client\bin\Debug\ASI.ScaleTraining.DataAccess.Common.dll
+C:\Users\XxaemaeThxX\Desktop\Scale Training\ScaleTraining\ASI.ScaleTraining.DataAccess.Client\bin\Debug\ASI.ScaleTraining.DataAccess.Common.pdb
+C:\Users\XxaemaeThxX\Desktop\Scale Training\ScaleTraining\ASI.ScaleTraining.DataAccess.Client\bin\Debug\ASI.ScaleTraining.DataAccess.Common.xml
+C:\Users\XxaemaeThxX\Desktop\Scale Training\ScaleTraining\ASI.ScaleTraining.DataAccess.Client\obj\Debug\ASI.ScaleTraining.DataAccess.Client.vbproj.CopyComplete

@@ -25,3 +25,16 @@ C:\Users\lcahan\Desktop\Scale Training\ASI.ScaleTraining.DataAccess.Policy\obj\D
 C:\Users\lcahan\Desktop\Scale Training\ASI.ScaleTraining.DataAccess.Policy\obj\Debug\ASI.ScaleTraining.DataAccess.Policy.dll
 C:\Users\lcahan\Desktop\Scale Training\ASI.ScaleTraining.DataAccess.Policy\obj\Debug\ASI.ScaleTraining.DataAccess.Policy.xml
 C:\Users\lcahan\Desktop\Scale Training\ASI.ScaleTraining.DataAccess.Policy\obj\Debug\ASI.ScaleTraining.DataAccess.Policy.pdb
+C:\Users\XxaemaeThxX\Desktop\Scale Training\ScaleTraining\ASI.ScaleTraining.DataAccess.Policy\obj\Debug\ASI.ScaleTraining.DataAccess.Policy.Resources.resources
+C:\Users\XxaemaeThxX\Desktop\Scale Training\ScaleTraining\ASI.ScaleTraining.DataAccess.Policy\obj\Debug\ASI.ScaleTraining.DataAccess.Policy.vbproj.GenerateResource.cache
+C:\Users\XxaemaeThxX\Desktop\Scale Training\ScaleTraining\ASI.ScaleTraining.DataAccess.Policy\obj\Debug\ASI.ScaleTraining.DataAccess.Policy.vbproj.CoreCompileInputs.cache
+C:\Users\XxaemaeThxX\Desktop\Scale Training\ScaleTraining\ASI.ScaleTraining.DataAccess.Policy\obj\Debug\ASI.ScaleTraining.DataAccess.Policy.dll
+C:\Users\XxaemaeThxX\Desktop\Scale Training\ScaleTraining\ASI.ScaleTraining.DataAccess.Policy\obj\Debug\ASI.ScaleTraining.DataAccess.Policy.xml
+C:\Users\XxaemaeThxX\Desktop\Scale Training\ScaleTraining\ASI.ScaleTraining.DataAccess.Policy\obj\Debug\ASI.ScaleTraining.DataAccess.Policy.pdb
+C:\Users\XxaemaeThxX\Desktop\Scale Training\ScaleTraining\ASI.ScaleTraining.DataAccess.Policy\bin\Debug\ASI.ScaleTraining.DataAccess.Policy.dll
+C:\Users\XxaemaeThxX\Desktop\Scale Training\ScaleTraining\ASI.ScaleTraining.DataAccess.Policy\bin\Debug\ASI.ScaleTraining.DataAccess.Policy.pdb
+C:\Users\XxaemaeThxX\Desktop\Scale Training\ScaleTraining\ASI.ScaleTraining.DataAccess.Policy\bin\Debug\ASI.ScaleTraining.DataAccess.Policy.xml
+C:\Users\XxaemaeThxX\Desktop\Scale Training\ScaleTraining\ASI.ScaleTraining.DataAccess.Policy\bin\Debug\ASI.ScaleTraining.DataAccess.Common.dll
+C:\Users\XxaemaeThxX\Desktop\Scale Training\ScaleTraining\ASI.ScaleTraining.DataAccess.Policy\bin\Debug\ASI.ScaleTraining.DataAccess.Common.pdb
+C:\Users\XxaemaeThxX\Desktop\Scale Training\ScaleTraining\ASI.ScaleTraining.DataAccess.Policy\bin\Debug\ASI.ScaleTraining.DataAccess.Common.xml
+C:\Users\XxaemaeThxX\Desktop\Scale Training\ScaleTraining\ASI.ScaleTraining.DataAccess.Policy\obj\Debug\ASI.ScaleTraining.DataAccess.Policy.vbproj.CopyComplete

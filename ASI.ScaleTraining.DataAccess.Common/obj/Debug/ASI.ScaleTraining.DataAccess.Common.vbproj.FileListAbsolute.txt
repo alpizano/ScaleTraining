@@ -33,3 +33,12 @@ C:\Users\lcahan\Desktop\Scale Training\ASI.ScaleTraining.DataAccess.Common\obj\D
 C:\Users\lcahan\Desktop\Scale Training\ASI.ScaleTraining.DataAccess.Common\obj\Debug\ASI.ScaleTraining.DataAccess.Common.dll
 C:\Users\lcahan\Desktop\Scale Training\ASI.ScaleTraining.DataAccess.Common\obj\Debug\ASI.ScaleTraining.DataAccess.Common.xml
 C:\Users\lcahan\Desktop\Scale Training\ASI.ScaleTraining.DataAccess.Common\obj\Debug\ASI.ScaleTraining.DataAccess.Common.pdb
+C:\Users\XxaemaeThxX\Desktop\Scale Training\ScaleTraining\ASI.ScaleTraining.DataAccess.Common\bin\Debug\ASI.ScaleTraining.DataAccess.Common.dll
+C:\Users\XxaemaeThxX\Desktop\Scale Training\ScaleTraining\ASI.ScaleTraining.DataAccess.Common\bin\Debug\ASI.ScaleTraining.DataAccess.Common.pdb
+C:\Users\XxaemaeThxX\Desktop\Scale Training\ScaleTraining\ASI.ScaleTraining.DataAccess.Common\bin\Debug\ASI.ScaleTraining.DataAccess.Common.xml
+C:\Users\XxaemaeThxX\Desktop\Scale Training\ScaleTraining\ASI.ScaleTraining.DataAccess.Common\obj\Debug\ASI.ScaleTraining.DataAccess.Common.Resources.resources
+C:\Users\XxaemaeThxX\Desktop\Scale Training\ScaleTraining\ASI.ScaleTraining.DataAccess.Common\obj\Debug\ASI.ScaleTraining.DataAccess.Common.vbproj.GenerateResource.cache
+C:\Users\XxaemaeThxX\Desktop\Scale Training\ScaleTraining\ASI.ScaleTraining.DataAccess.Common\obj\Debug\ASI.ScaleTraining.DataAccess.Common.vbproj.CoreCompileInputs.cache
+C:\Users\XxaemaeThxX\Desktop\Scale Training\ScaleTraining\ASI.ScaleTraining.DataAccess.Common\obj\Debug\ASI.ScaleTraining.DataAccess.Common.dll
+C:\Users\XxaemaeThxX\Desktop\Scale Training\ScaleTraining\ASI.ScaleTraining.DataAccess.Common\obj\Debug\ASI.ScaleTraining.DataAccess.Common.xml
+C:\Users\XxaemaeThxX\Desktop\Scale Training\ScaleTraining\ASI.ScaleTraining.DataAccess.Common\obj\Debug\ASI.ScaleTraining.DataAccess.Common.pdb

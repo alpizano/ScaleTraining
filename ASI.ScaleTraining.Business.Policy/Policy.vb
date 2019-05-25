@@ -90,6 +90,12 @@ Public Class Policy
 
   End Function
 
+  Public Function FindComboDetail(ByVal iLineID As Integer) As dat.ComboDetail
+
+    Return PopulateDataComboObjectDetail(daPolicy.FetchComboDetail(iLineID))
+
+  End Function
+
 #End Region
 
 #Region " Methods - Save "
@@ -256,25 +262,69 @@ Public Class Policy
         .LineID = oDataTable.Rows(0).Field(Of Integer)("UniqLine")
         .LineType = oDataTable.Rows(0).Field(Of String)("CdPolicyLineTypeCode")
         .FormCategory = oDataTable.Rows(0).Field(Of String)("FormCategory")
-        .BillToContactName = oDataTable.Rows(0).Field(Of String)("ContactNameBillTo")
-        .BillToAddress1 = oDataTable.Rows(0).Field(Of String)("Address1BillTo")
-        .BillToAddress2 = oDataTable.Rows(0).Field(Of String)("Address2BillTo")
-        .BillToAddress3 = oDataTable.Rows(0).Field(Of String)("Address3BillTo")
-        .BillToCity = oDataTable.Rows(0).Field(Of String)("CityBillTo")
-        .BillToState = oDataTable.Rows(0).Field(Of String)("CdStateCodeBillTo")
-        .BillToPostalCode = oDataTable.Rows(0).Field(Of String)("PostalCodeBillTo")
-        .BillToCounty = oDataTable.Rows(0).Field(Of String)("CountyBillTo")
-        .BillToCountryCode = oDataTable.Rows(0).Field(Of String)("CdCountryCodeBillTo")
-        .Email = oDataTable.Rows(0).Field(Of String)("Email")
-        .Fax = oDataTable.Rows(0).Field(Of String)("Fax")
-        .FaxExtension = oDataTable.Rows(0).Field(Of String)("FaxExtension")
+        '.BillToContactName = oDataTable.Rows(0).Field(Of String)("ContactNameBillTo")
+        '.BillToAddress1 = oDataTable.Rows(0).Field(Of String)("Address1BillTo")
+        '.BillToAddress2 = oDataTable.Rows(0).Field(Of String)("Address2BillTo")
+        '.BillToAddress3 = oDataTable.Rows(0).Field(Of String)("Address3BillTo")
+        '.BillToCity = oDataTable.Rows(0).Field(Of String)("CityBillTo")
+        '.BillToState = oDataTable.Rows(0).Field(Of String)("CdStateCodeBillTo")
+        '.BillToPostalCode = oDataTable.Rows(0).Field(Of String)("PostalCodeBillTo")
+        '.BillToCounty = oDataTable.Rows(0).Field(Of String)("CountyBillTo")
+        '.BillToCountryCode = oDataTable.Rows(0).Field(Of String)("CdCountryCodeBillTo")
+        '.Email = oDataTable.Rows(0).Field(Of String)("Email")
+        '.Fax = oDataTable.Rows(0).Field(Of String)("Fax")
+        '.FaxExtension = oDataTable.Rows(0).Field(Of String)("FaxExtension")
         .BillingCompany = oDataTable.Rows(0).Field(Of String)("BillingCompany")
         .IssuingCompany = oDataTable.Rows(0).Field(Of String)("IssuingCompany")
         .IssuingState = oDataTable.Rows(0).Field(Of String)("IssuingState")
+
       End With
     End If
 
     Return datLineDetail
+
+  End Function
+
+  Private Function PopulateDataComboObjectDetail(ByVal oDataTable As DataTable) As dat.ComboDetail
+
+    Dim datComboDetail As dat.ComboDetail = Nothing
+
+    If oDataTable IsNot Nothing AndAlso oDataTable.Rows.Count > 0 Then
+      datComboDetail = New dat.ComboDetail()
+      With datComboDetail
+        .LineID = oDataTable.Rows(0).Field(Of Integer)("UniqLine")
+        .LineType = oDataTable.Rows(0).Field(Of String)("CdPolicyLineTypeCode")
+        .FormCategory = oDataTable.Rows(0).Field(Of String)("FormCategory")
+
+        .BillingCompany = oDataTable.Rows(0).Field(Of String)("BillingCompany")
+        .IssuingCompany = oDataTable.Rows(0).Field(Of String)("IssuingCompany")
+        .IssuingState = oDataTable.Rows(0).Field(Of String)("IssuingState")
+
+        .PolicyID = oDataTable.Rows(0).Field(Of Integer)("UniqPolicy")
+        If oDataTable.Rows(0).Field(Of Object)("BilledCommission") Is Nothing Then
+          .BilledCommission = -1
+        Else
+          .BilledCommission = oDataTable.Rows(0).Field(Of Decimal)("BilledCommission")
+        End If
+        If oDataTable.Rows(0).Field(Of Object)("BilledPremium") Is Nothing Then
+          .BilledPremium = -1
+        Else
+          .BilledPremium = oDataTable.Rows(0).Field(Of Decimal)("BilledPremium")
+        End If
+        If oDataTable.Rows(0).Field(Of Object)("AnnualizedCommission") Is Nothing Then
+          .AnnualizedCommission = -1
+        Else
+          .AnnualizedCommission = oDataTable.Rows(0).Field(Of Decimal)("AnnualizedCommission")
+        End If
+        If oDataTable.Rows(0).Field(Of Object)("AnnualizedPremium") Is Nothing Then
+          .AnnualizedPremium = -1
+        Else
+          .AnnualizedPremium = oDataTable.Rows(0).Field(Of Decimal)("AnnualizedPremium")
+        End If
+      End With
+    End If
+
+    Return datComboDetail
 
   End Function
 
