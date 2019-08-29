@@ -137,9 +137,10 @@ Public Class Policy
   ''' <remarks>
   '''   None
   ''' </remarks>
-  Public Function CheckPolicySecurity(ByVal iPolicyID As Integer, ByVal sUserCode As String) As Boolean
-
-    Dim oDataTable As DataTable = daPolicy.CheckPolicySecurity(iPolicyID, sUserCode)
+  'Public Function CheckPolicySecurity(ByVal iPolicyID As Integer, ByVal sUserCode As String) As Boolean
+  Public Function CheckPolicySecurity(ByVal iPolicyID As Integer) As Boolean
+    'Dim oDataTable As DataTable = daPolicy.CheckPolicySecurity(iPolicyID, sUserCode)
+    Dim oDataTable As DataTable = daPolicy.CheckPolicySecurity(iPolicyID)
 
     If oDataTable IsNot Nothing AndAlso oDataTable.Rows.Count > 0 Then
       If oDataTable.Rows(0).Field(Of Integer)("CountOf") = 1 Then
@@ -292,7 +293,17 @@ Public Class Policy
     If oDataTable IsNot Nothing AndAlso oDataTable.Rows.Count > 0 Then
       datComboDetail = New dat.ComboDetail()
       With datComboDetail
-        .LineID = oDataTable.Rows(0).Field(Of Integer)("UniqLine")
+
+        .PolicyID = oDataRow.Field(Of Integer)("UniqPolicy")
+        .LineID = oDataRow.Field(Of Integer)("UniqLine")
+        .Line = oDataRow.Field(Of String)("Line")
+        .StatusDescription = oDataRow.Field(Of String)("StatusDescription")
+        .Effective = oDataRow.Field(Of Date)("EffectiveDate")
+        .Expiration = oDataRow.Field(Of Date)("ExpirationDate")
+        .PolicyNumber = oDataRow.Field(Of String)("PolicyNumber")
+        .PolicyDescription = oDataRow.Field(Of String)("PolicyDescription")
+
+        '.LineID = oDataTable.Rows(0).Field(Of Integer)("UniqLine")
         .LineType = oDataTable.Rows(0).Field(Of String)("CdPolicyLineTypeCode")
         .FormCategory = oDataTable.Rows(0).Field(Of String)("FormCategory")
 
@@ -300,7 +311,7 @@ Public Class Policy
         .IssuingCompany = oDataTable.Rows(0).Field(Of String)("IssuingCompany")
         .IssuingState = oDataTable.Rows(0).Field(Of String)("IssuingState")
 
-        .PolicyID = oDataTable.Rows(0).Field(Of Integer)("UniqPolicy")
+        '.PolicyID = oDataTable.Rows(0).Field(Of Integer)("UniqPolicy")
         If oDataTable.Rows(0).Field(Of Object)("BilledCommission") Is Nothing Then
           .BilledCommission = -1
         Else

@@ -91,23 +91,5 @@ ASI.ScaleTraining.DataAccess.Policy
    expiration dates.
  </remarks>
 </member>
-<member name="M:ASI.ScaleTraining.DataAccess.Policy.Policy.CheckPolicySecurity(System.Int32,System.String)">
- <summary>
-   Determines if a particular user has rights to view a particular policy.
- </summary>
- <param name="iPolicyID">
-   Integer containing the policy ID.
- </param>
- <param name="sUserCode">
-   String containing the user code.
- </param>
- <returns>
-   DataTable containing a single record with one column representing either
-   True (1) or False (0).
- </returns>
- <remarks>
-   None
- </remarks>
-</member>
 </members>
 </doc>

@@ -99,23 +99,6 @@ ASI.ScaleTraining.Business.Policy
    None
  </remarks>
 </member>
-<member name="M:ASI.ScaleTraining.Business.Policy.Policy.CheckPolicySecurity(System.Int32,System.String)">
- <summary>
-   Determines if a particular user has rights to view a particular policy.
- </summary>
- <param name="iPolicyID">
-   Integer containing the policy ID.
- </param>
- <param name="sUserCode">
-   String containing the user code.
- </param>
- <returns>
-   Boolean indicating if the user can view the policy.
- </returns>
- <remarks>
-   None
- </remarks>
-</member>
 <member name="M:ASI.ScaleTraining.Business.Policy.Policy.PopulateDataObject(System.Data.DataTable)">
  <summary>
    Translates a DataTable containing SQL records into a collection of policy objects.

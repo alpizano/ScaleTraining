@@ -150,9 +150,9 @@ Public Class AccountLocate
   ''' </remarks>
   Private Sub cmdPolicies_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmdPolicies.Click
 
-    Dim oPolicyList As New PolicyList(DirectCast(lvwClients.SelectedItems(0).Tag, Integer), _
-                                      lvwClients.SelectedItems(0).Text, _
-                                      Environment.GetCommandLineArgs(1), _
+    Dim oPolicyList As New PolicyList(DirectCast(lvwClients.SelectedItems(0).Tag, Integer),
+                                      lvwClients.SelectedItems(0).Text,
+                                      Environment.GetCommandLineArgs(1),
                                       p_sTypeCode)
     oPolicyList.Show()
 

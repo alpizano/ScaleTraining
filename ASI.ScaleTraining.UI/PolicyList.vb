@@ -233,7 +233,8 @@ Public Class PolicyList
 
     If datPolicies IsNot Nothing Then
       For Each datPolicy As dat.Policy In datPolicies
-        If p_sUserType = "E" OrElse busPolicy.CheckPolicySecurity(datPolicy.PolicyID, p_sUserCode) = True Then
+        ' If p_sUserType = "E" OrElse busPolicy.CheckPolicySecurity(datPolicy.PolicyID, p_sUserCode) = True Then
+        If p_sUserType = "E" OrElse busPolicy.CheckPolicySecurity(datPolicy.PolicyID) = True Then
 
           Dim lvwItem As New ListViewItem(datPolicy.Line)
           With lvwItem

@@ -44,4 +44,3 @@ C:\Users\XxaemaeThxX\Desktop\Scale Training\ScaleTraining\ASI.ScaleTraining.Busi
 C:\Users\XxaemaeThxX\Desktop\Scale Training\ScaleTraining\ASI.ScaleTraining.Business.Client\bin\Debug\ASI.ScaleTraining.DataAccess.Common.xml
 C:\Users\XxaemaeThxX\Desktop\Scale Training\ScaleTraining\ASI.ScaleTraining.Business.Client\obj\Debug\ASI.ScaleTraining.Business.Client.vbproj.CopyComplete
 C:\Users\XxaemaeThxX\Desktop\Scale Training\ScaleTraining\ASI.ScaleTraining.Business.Client\bin\Debug\ASI.ScaleTraining.Data.Client.xml
-C:\Users\XxaemaeThxX\Desktop\Scale Training\ScaleTraining\ASI.ScaleTraining.Business.Client\obj\Debug\ASI.ScaleTraining.Business.Client.vbprojAssemblyReference.cache

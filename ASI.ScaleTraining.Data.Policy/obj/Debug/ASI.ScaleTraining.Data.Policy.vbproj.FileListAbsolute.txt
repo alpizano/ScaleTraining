@@ -33,3 +33,4 @@ C:\Users\XxaemaeThxX\Desktop\Scale Training\ScaleTraining\ASI.ScaleTraining.Data
 C:\Users\XxaemaeThxX\Desktop\Scale Training\ScaleTraining\ASI.ScaleTraining.Data.Policy\obj\Debug\ASI.ScaleTraining.Data.Policy.dll
 C:\Users\XxaemaeThxX\Desktop\Scale Training\ScaleTraining\ASI.ScaleTraining.Data.Policy\obj\Debug\ASI.ScaleTraining.Data.Policy.xml
 C:\Users\XxaemaeThxX\Desktop\Scale Training\ScaleTraining\ASI.ScaleTraining.Data.Policy\obj\Debug\ASI.ScaleTraining.Data.Policy.pdb
+C:\Users\XxaemaeThxX\Desktop\Scale Training\ScaleTraining\ASI.ScaleTraining.Data.Policy\obj\Debug\ASI.ScaleTraining.Data.Policy.vbprojAssemblyReference.cache

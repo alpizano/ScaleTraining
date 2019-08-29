@@ -175,17 +175,26 @@ Public Class Policy
   ''' <remarks>
   '''   None
   ''' </remarks>
-  Public Function CheckPolicySecurity(ByVal iPolicyID As Integer, ByVal sUserCode As String) As DataTable
+  ''' 
+  'Public Function CheckPolicySecurity(ByVal iPolicyID As Integer, ByVal sUserCode As String) As DataTable
+  Public Function CheckPolicySecurity(ByVal iPolicyID As Integer) As DataTable
 
-    Dim sSQL As String = " Select COUNT(*) As countof " & _
-                         " FROM securityuser u " & _
-                         " INNER JOIN securityuserstructurecombinationjt jt On jt.uniqsecurityuser =  u.uniqsecurityuser " & _
-                         " INNER JOIN structurecombination s On  s.uniqstructure = jt.uniqstructure " & _
-                         " INNER JOIN policy p On p.uniqagency = s.uniqagency And " & _
-                         "                        p.uniqbranch = s.uniqbranch And " & _
-                         "                        p.uniqdepartment = s.uniqdepartment " & _
-                         " WHERE u.usercode = '" & ToDBString(sUserCode) & "' and " & _
-                         "       p.uniqpolicy =  " & iPolicyID
+    ' Dim sSQL As String = " Select COUNT(*) As countof " & _
+    '          " FROM securityuser u " & _
+    '          " INNER JOIN securityuserstructurecombinationjt jt On jt.uniqsecurityuser =  u.uniqsecurityuser " & _
+    '          " INNER JOIN structurecombination s On  s.uniqstructure = jt.uniqstructure " & _
+    '          " INNER JOIN policy p On p.uniqagency = s.uniqagency And " & _
+    '          "                        p.uniqbranch = s.uniqbranch And " & _
+    '          "                        p.uniqdepartment = s.uniqdepartment " & _
+    '           " WHERE u.usercode = '" & ToDBString(sUserCode) & "' and " & _
+    '           "       p.uniqpolicy =  " & iPolicyID
+
+    Dim sSQL As String = "SELECT COUNT(*) AS CountOf " &
+                         "FROM SecurityUserStructureCombinationJT jt " &
+                         "INNER JOIN structurecombination s  On  s.uniqstructure = jt.uniqstructure " &
+                         "INNER JOIN policy p On p.uniqagency = s.uniqagency And p.uniqbranch = s.uniqbranch And p.uniqdepartment = s.uniqdepartment " &
+                         "WHERE p.uniqpolicy =  " & iPolicyID
+
     Return ExecuteDataTable(sSQL)
 
   End Function
